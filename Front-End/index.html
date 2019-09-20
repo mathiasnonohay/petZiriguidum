@@ -3,40 +3,61 @@
 <html>
   <!--Cabeçalho - configurações da página-->
   <head>
-    <title>Page Title</title>
+    <title>Ziriguidum PetShop</title>
 
     <!-- link para o arquivo css-->
     <link rel="stylesheet" href="./css/estilo.css" />
+
+    <!-- link para framework bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <!-- definição do formato de codificação de caracteres utilizado no documento-->
     <meta charset="UTF-8" />
     <!-- descrição da página-->
-    <meta name="description" content="Aula de HTML e CSS" />
+    <meta name="description" content="Ziriguidum PetShop" />
     <!-- palavras chaves-->
-    <meta name="keywords" content="HTML, CSS, XML, JavaScript" />
-    <meta name="author" content="Rodrigo Farias" />
+    <meta name="keywords" content="PetShop, Animal, Cachorro, Tosa" />
+    <meta name="author" content="Mathias Almeida Gianotti de Nonohay" />
     <!-- indicação de que a página deve ser atualizada a cada 30 segundos-->
-    <meta http-equiv="refresh" content="30" />
+    <!--<meta http-equiv="refresh" content="30" />-->
 
     <!-- código javascript simplificado não recomendado-->
     <script>
       function myFunction() {
-        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        document.getElementById("demo").innerHTML = "Bem Vindo Consagrado!";
       }
     </script>
     <!-- código javascript 2 recomendado-->
     <script src="./js/inicial.js"></script>
 
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- tag para adicional css diretamente dentro do arquivo html - não recomendado
     <style>
       body {
         background-color: lightblue;
       }
-
       h1 {
         color: white;
         text-align: center;
       }
-
       p {
         font-family: verdana;
         font-size: 20px;
@@ -44,30 +65,28 @@
     </style>-->
   </head>
 
-  <body id="bodyID" class="bodyClass">
-    <h1 id="demo">This is a heading</h1>
-    <h2 onclick="myFunction()">This is a heading</h2>
-
+  <body
+    id="bodyID"
+    class="bodyClass"
+    background="C:\Users\Aluno\Documents\Mathias\ProjetoPet\Front-End\img\7c491b923433ab549d7f679d837ea970.jpg"
+  >
+    <div class="container bg-info text-center para1" style="width: 600px;">
+      <h1>Bem Vindo Consagrado!</h1>
+      <h2>Ziriguidum PetShop</h2>
+      <h3>
+        O Melhor Lugar Para Animais e Seu Pet!
+      </h3>
+    </div>
     <!--Não funcionará uma tag html com dois id-->
-    <h3 id="para1 para2" onclick="myFunction2()">This is a heading</h3>
 
     <!--Para usar mais do que um estilo em uma única tag html é necessário utilizar classes css-->
-    <h3 class="para1 para2" id="tag3">This is a heading 1232435467679</h3>
-    <p>This is a paragraph.</p>
-
-    <!-- Botão para trocar cor do body-->
-    <button onclick="trocaBackColor()">Troca cor</button>
-
-    <div>
-        <p></p>
-      <label>Nome</label>
-      <input id="nome" type="text" onchange="escreveSaudacao(this.value)"/>
+    <h3 class="para1 para2" id="tag3">Área de Login</h3>
+    <div class="container bg-info text-center" style="width: 200px;">
+      <label>Login:</label> <input id="login" type="text" />
       <p></p>
-      <p id="saudacao">Boa noite!</p>
-
-
+      <label>Senha:</label> <input id="login" type="text" />
+      <p></p>
+      <button type="button" class="btn btn-secondary">Entrar</button>
     </div>
-
-
   </body>
 </html>
